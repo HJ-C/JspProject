@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./detail.css">
+    <script src="https://kit.fontawesome.com/301043e4a8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>제품 상세</title>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="search">
+            <span class="search__logo">
+                <a href="./index.html">Market</a>
+            </span>            
+            <span class="search__input">
+                <input type="text" name="word" id="word">
+                <button type="button" id="button"><i class="fas fa-search"></i></button>
+            </span>
+        </div>
+    </header>   
+    
+    <!-- Section -->  
+    <section id="goodsdeatil">
+        <!-- 상품정보 -->
+        <div id="title">
+            <!-- 상품이미지 -->
+            <div id="goodsImg" class="goodsinfo">
+                <img id="goodsImg__img" src="소주한잔.jpg">
+            </div>
+            <!--상품개요  -->
+            <div id="goodsSummary" class="goodsinfo">
+                <!-- 상품명 -->
+                <div id="goods-name">임창정</div>
+                <!-- 상품가격 -->
+                <div id="goods-price">2000원</div>
+                <!-- 상품수량선택 -->
+                <div id="option">
+                    <div class="option__label">수량</div>
+                    <div class="option__select">
+                        <input type="text" name="opt" id="opt"  class="opt" value="1" readonly>
+                        <input type="button" value="+" class="opt">
+                        <input type="button" value="-" class="opt">
+                    </div>
+                </div>
+                
+                <!-- 상품옵션선택 -->
+                <div id="option">
+                    <div class="option__label"><label for="opt">옵션선택</label></div>
+                    <div class="option__select">
+                        <select name="opt" id="opt">
+                            <option value="opt-name">옵션명</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>                            
+                        </select>                       
+                    </div>                                                                                                                        
+                </div> 
+                                    
+                <!-- 장바구니 | 구매하기 -->
+                <div id="order">
+                    <!-- 서버 -->
+                    <span class="order__Btn"><input class="order__input c1" type="button" value="장바구니"></span> 
+                    <span class="order__Btn"><input class="order__input c2" type="button" value="구매하기"></span> 
+                </div>
+            </div>    
+        </div>    
+
+        <!-- Taps -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">제품설명</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">QnA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">기타등등</a>
+              </li>
+          </ul>
+          
+    </section>  
+
+
+
+</body>
+</html>
